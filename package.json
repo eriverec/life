@@ -18,5 +18,7 @@
     "hover.css": "^2.3.2",
     "nuxt": "^2.14.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
