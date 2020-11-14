@@ -1,6 +1,14 @@
 <template>
   <div>
-    <Menu />
+    <nav>
+      <ul class="menuItems">
+        <li v-for="(item, i) in items" :key="i">
+          <NuxtLink router exact :to="item.to">
+            {{ item.title }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
     <Nuxt />
     <Footer />
   </div>
@@ -16,7 +24,33 @@ body {
 export default {
   data() {
     return {
-      title: "Life"
+      title: "Life",
+      items: [
+        {
+          title: "Home",
+          to: "/"
+        },
+        {
+          title: "Campos",
+          to: "/camp"
+        },
+        {
+          title: "Educación",
+          to: "/educ"
+        },
+        {
+          title: "Experiencia",
+          to: "/exp"
+        },
+        {
+          title: "Referencias",
+          to: "/refer"
+        },
+        {
+          title: "Conocimientos",
+          to: "/conoc"
+        }
+      ],
     };
   },
   head() {
