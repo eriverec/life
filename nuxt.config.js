@@ -1,8 +1,5 @@
 export default {
-  router: {
-    linkActiveClass: 'nuxt-link-active',
-    linkExactActiveClass: 'nuxt-link-exact-active' 
-  },
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -59,9 +56,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
-    ['bootstrap-vue/nuxt', {
-      icons: true,
-    }],
+    ['bootstrap-vue/nuxt'],
   ],
 
   markdownit: {
