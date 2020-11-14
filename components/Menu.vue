@@ -3,35 +3,33 @@
     <nav>
       <ul class="menuItems">
         <li>
-          <nuxt-link to="/" data-item="Campos" class="nuxt-link-active"
+          <NuxtLink to="/" data-item="Campos" class="nuxt-link-active"
             >Home
-          </nuxt-link>
+          </NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/camp" data-item="Campos" class="nuxt-link-active"
-            >Campos
-          </nuxt-link>
+          <NuxtLink to="/camp" data-item="Campos" class="nuxt-link-active"> Campos </NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/educ" data-item="Campos" class="nuxt-link-active"
+          <NuxtLink to="/educ" data-item="Campos" class="nuxt-link-active"
             >Educacion
-          </nuxt-link>
+          </NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/exp" data-item="Campos" class="nuxt-link-active"
+          <NuxtLink to="/exp" data-item="Campos" class="nuxt-link-active"
             >Experiencia
-          </nuxt-link>
+          </NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/refer" data-item="Campos" class="nuxt-link-active"
+          <NuxtLink to="/refer" data-item="Campos" class="nuxt-link-active"
             >Referencias
-          </nuxt-link>
+          </NuxtLink>
         </li>
 
         <li>
-          <nuxt-link to="/conoc" data-item="Campos" class="nuxt-link-active"
+          <NuxtLink to="/conoc" data-item="Campos" class="nuxt-link-active"
             >Conocimientos
-          </nuxt-link>
+          </NuxtLink>
         </li>
       </ul>
     </nav>
