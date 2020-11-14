@@ -12,6 +12,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/markdownit": "^1.2.10",
+    "bootstrap-icons": "^1.1.0",
     "bootstrap-vue": "^2.18.1",
     "contentful": "^7.14.8",
     "core-js": "^3.6.5",
