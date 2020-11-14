@@ -2,39 +2,50 @@
   <div>
     <nav>
       <ul class="menuItems">
-        <li>
-          <NuxtLink to="/" data-item="Campos" class="nuxt-link-active"
-            >Home
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/camp" data-item="Campos" class="nuxt-link-active"> Campos </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/educ" data-item="Campos" class="nuxt-link-active"
-            >Educacion
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/exp" data-item="Campos" class="nuxt-link-active"
-            >Experiencia
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/refer" data-item="Campos" class="nuxt-link-active"
-            >Referencias
-          </NuxtLink>
-        </li>
-
-        <li>
-          <NuxtLink to="/conoc" data-item="Campos" class="nuxt-link-active"
-            >Conocimientos
+        <li v-for="(item, i) in items" :key="i">
+          <NuxtLink router exact :to="item.to">
+            {{ item.title }}
           </NuxtLink>
         </li>
       </ul>
     </nav>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        {
+          title: "Home",
+          to: "/"
+        },
+        {
+          title: "Campos",
+          to: "/camp"
+        },
+        {
+          title: "Educación",
+          to: "/educ"
+        },
+        {
+          title: "Experiencia",
+          to: "/exp"
+        },
+        {
+          title: "Referencias",
+          to: "/refer"
+        },
+        {
+          title: "Conocimientos",
+          to: "/conoc"
+        }
+      ],
+    };
+  }
+};
+</script>
 
 <style>
 .topnav {
